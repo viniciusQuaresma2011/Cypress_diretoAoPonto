@@ -2,7 +2,7 @@
 FROM cypress/included:latest
 
 # Definir o diretório de trabalho
-WORKDIR /app
+#WORKDIR /app
 
 # Copiar os arquivos de configuração e os testes
 COPY package.json .
