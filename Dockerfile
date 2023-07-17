@@ -5,7 +5,7 @@ FROM cypress/included:latest
 WORKDIR /app
 
 # Copiar os arquivos de configuração e os testes
-COPY cypress.json .
+COPY package.json .
 COPY cypress ./cypress
 
 # Executar o comando de instalação das dependências
