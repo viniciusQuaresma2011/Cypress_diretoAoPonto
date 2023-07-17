@@ -5,8 +5,7 @@ FROM cypress/included:latest
 WORKDIR /app
 
 # Copiar os arquivos de configuração e os testes
-COPY cypress.json .
-COPY cypress ./cypress
+COPY ..
 
 # Instalar as dependências
 RUN npm install
