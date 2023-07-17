@@ -5,10 +5,12 @@ FROM cypress/included:latest
 WORKDIR /app
 
 # Copiar os arquivos de configuração e os testes
-COPY ..
+COPY jsconfig.json .
+COPY cypress ./cypress
 
 # Instalar as dependências
 RUN npm install
 
 # Executar os testes
 CMD ["npm", "run", "cypress:run"]
+
